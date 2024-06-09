@@ -60,9 +60,9 @@ def main():
             sx /= 1.01
             sy /= 1.01
             sz /= 1.01
-        if keys[K_i]:  # Novo comando para rotação ao redor do eixo Z
+        if keys[K_i]:
             angle_z += 1
-        if keys[K_k]:  # Novo comando para rotação ao redor do eixo Z
+        if keys[K_k]:
             angle_z -= 1
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)

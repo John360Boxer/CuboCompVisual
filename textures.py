@@ -6,7 +6,7 @@ def load_textures(cube):
         glBindTexture(GL_TEXTURE_2D, cube.texture_ids[i])
         img = Image.open(f'texture_{i}.png')
         
-        # Inverte horizontalmente apenas para as texturas 0, 3, 4 e 5
+        # Inverte as texturas das faces 1, 4, 5 e 6, que estão ao contrário
         if i in [0, 3, 4, 5]:
             img = img.transpose(Image.FLIP_LEFT_RIGHT)
         
